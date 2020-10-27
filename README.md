@@ -19,3 +19,4 @@ npm run build
 ```
 npm run lint
 ```
+![alt test](https://img2020.cnblogs.com/blog/2089350/202010/2089350-20201028012644385-603349626.png)
