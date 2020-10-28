@@ -152,6 +152,13 @@
 		<el-table-column prop="address" label="地址"></el-table-column>
 		</el-table>
 		</el-dialog>
+		<el-dialog
+		title="提示信息"
+		:visible.sync="deleteVisible">
+		<div style="margin-bottom: 20px;">此操作将删除数据，要继续吗？</div>
+		<el-button @click = "handleRemove()" type="primary">确认</el-button>
+		<el-button @click = "deleteVisible = false" >取消</el-button>
+		</el-dialog>
 	</section>
 </template>
 
@@ -205,7 +212,8 @@
 				reMoveFormVisible: false,
 				addFormVisible: false,
 				searchVisible: false,
-				loading: true
+				loading: true,
+				deleteVisible: false
 			}
 		},
 		created() {
@@ -297,15 +305,10 @@
 				this.table_index = index;
 			},
 			handleDelete(index) {
-				this.tableData.splice(index, 1);
-				this.pageTotl--;
-				this.$message({
-					message: "操作成功！",
-					type: 'success',
-					duration: 1000
-				});
+				this.deleteVisible = true;
+				this.table_index = index;
 			},
-			handleSave () {
+			handleSave() {
 					this.$confirm('此操作会修改原始数据，要继续吗？', '提示', {
 						confirmButtonText: '确定',
 						cancelButtonText: '取消',
@@ -329,6 +332,15 @@
 				
 						});
 					},
+			handleRemove() {
+				this.tableData.splice(this.table_index, 1);
+				this.$message({
+					message: '删除成功',
+					type: 'success',
+					duration: 1000
+				})
+				this.deleteVisible = false;
+			},
 			handleSizeChange(val) {
 				// console.log(val);
 				this.pageSize = val;
