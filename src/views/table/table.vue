@@ -334,6 +334,7 @@
 					},
 			handleRemove() {
 				this.tableData.splice(this.table_index, 1);
+				this.pageTotl--;
 				this.$message({
 					message: '删除成功',
 					type: 'success',
