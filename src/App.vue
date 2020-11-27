@@ -1,16 +1,22 @@
 <template>
 	<div id="app">
-		<router-view class="header" name="a"></router-view>
-		<router-view class="myTable" name="b"></router-view>
+		<router-view></router-view>
 	</div>
 </template>
 
 <script>
-	
 export default {
 	name: 'app',
 	components: {
 		
+	},
+	data() {
+		return {
+			
+		}
+	},
+	created() {
+		this.$router.push({path: '/index'});
 	}
 }
 </script>
@@ -19,11 +25,6 @@ export default {
 body {
 	margin: 0;
 	padding: 0;
-}
-.header {
-	margin-bottom: 100px;
-}
-.myTable {
-	margin-left: 10px;
+	font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 </style>

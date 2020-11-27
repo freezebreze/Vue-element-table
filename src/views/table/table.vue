@@ -359,7 +359,10 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
+	section {
+		margin-left: 5px;
+	}
 .el-pagination {
 	margin-top: 30px;
 	text-align: center;

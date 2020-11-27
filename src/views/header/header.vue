@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="container">
 		<header>
 			<a href="#">
 				<img class="header-logo" src="../../assets/logo.svg" alt="logo"/>
@@ -15,7 +15,7 @@
     },
 };
 </script>
-<style>
+<style >
 header {
 	background-color: #fff;
 	height: 80px;
