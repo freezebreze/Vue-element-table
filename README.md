@@ -1,4 +1,4 @@
-# myTable
+# demo
 使用Vue全家桶+elment-ui写的一个demo，以后会慢慢更新慢慢改进。喜欢的给个星星
 ## Project setup
 ```
