@@ -7,8 +7,8 @@
 				<li><i class="el-icon-s-custom"></i>性别：男</li>
 				<li><i class="el-icon-location-information"></i>现居地：广西</li>
 				<li><i class="el-icon-chat-dot-round"></i>联系方式：🐧1156341958</li>
-				<li><i class="el-icon-link"></i>项目地址: <a href="https://github.com/freezebreze/Vue-element-table">Click Me</a></li>
-				<li><i class="el-icon-chat-line-square"></i>随便说说：小张是猪，哈哈哈</li>
+				//<li><i class="el-icon-link"></i>项目地址: <a href="https://github.com/freezebreze/Vue-element-table">Click Me</a></li>
+				//<li><i class="el-icon-chat-line-square"></i>随便说说：小张是猪，哈哈哈</li>
 			</ul>
 		</div>
 	</div>
